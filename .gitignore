@@ -1,0 +1,8 @@
+*.kpf
+*.pyc
+*.mako.py
+*.log
+data/*
+build/*
+dist/*
+/swat/tests/backend-test-files/smb.conf.old

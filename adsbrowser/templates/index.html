@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+<html> 
+<head> 
+	<title>${c.title}</title> 
+	<!-- http://extjs.cachefly.net --> 
+	<style type="text/css">
+    #loading-mask{
+        position:absolute;
+        left:0;
+        top:0;
+        width:100%;
+        height:100%;
+        z-index:20000;
+        background-color:white;
+    }
+    #loading{
+        position:absolute;
+        left:45%;
+        top:40%;
+        padding:2px;
+        z-index:20001;
+        height:auto;
+    }
+    #loading a {
+        color:#225588;
+    }
+    #loading .loading-indicator{
+        background:white;
+        color:#444;
+        font:bold 13px tahoma,arial,helvetica;
+        padding:10px;
+        margin:0;
+        height:auto;
+    }
+    #loading-msg {
+        font: normal 10px arial,tahoma,sans-serif;
+    }	
+	</style>
+	
+	
+	<link rel="stylesheet" type="text/css" href="./jslibs/resources/css/ext-all.css" />
+	<link rel="stylesheet" type="text/css" href="./jslibs/resources/css/RowEditor.css" />
+	<link rel="stylesheet" type="text/css" href="./jslibs/resources/css/passwordmeter.css" />
+	<link rel="stylesheet" type="text/css" href="./jslibs/resources/css/gridsearch.css" />
+	<link rel="stylesheet" type="text/css" href="./jslibs/resources/css/app.css" />
+	<link rel="stylesheet" type="text/css" href="./jslibs/resources/css/ext-ux-wiz.css" />
+	<link rel="stylesheet" type="text/css" href="./css/app.css" /> 
+ 
+	<!--
+	<script type="text/javascript" src="./jslibs/adapter/ext/ext-base-debug.js"></script> 
+	<script type="text/javascript" src="./jslibs/ext-all-debug.js"></script> 
+	-->
+	<script type="text/javascript" src="./jslibs/adapter/ext/ext-base.js"></script> 
+	<script type="text/javascript" src="./jslibs/ext-all.js"></script> 
+	<script type="text/javascript" src="./jslibs/locale/ext-lang-es.js"></script> 
+	<script type="text/javascript" src="./js/utils.js"></script> 
+
+% if c.auth == True:
+	
+	<script type="text/javascript">
+		Config = {}
+		Config.DnsDomain = '${c.DnsDomain}';
+		Config.RootDSE =   '${c.RootDSE}';
+	</script> 
+	
+	<script type="text/javascript" src="./js/flags.js"></script> 
+	
+	
+	<script type="text/javascript" src="./jslibs/RowEditor.js"></script>
+	<script type="text/javascript" src="./jslibs/CheckColumn.js"></script>
+	<script type="text/javascript" src="./jslibs/PasswordMeter.js"></script>
+	<script type="text/javascript" src="./jslibs/Ext.ux.grid.Search.js"></script>
+
+	<script type="text/javascript" src="./jslibs/wizard/CardLayout.js"></script>
+	<script type="text/javascript" src="./jslibs/wizard/Wizard.js"></script>
+	<script type="text/javascript" src="./jslibs/wizard/Header.js"></script>
+	<script type="text/javascript" src="./jslibs/wizard/Card.js"></script>		
+	
+	<script type="text/javascript" src="./js/Dialogs/SendDialog.js"></script> 
+	<script type="text/javascript" src="./js/Dialogs/DialogResetPass.js"></script> 
+	
+	<script type="text/javascript" src="./js/UserController.js"></script> 
+	<script type="text/javascript" src="./js/ContexMenu.js"></script> 
+	
+	
+	<script type="text/javascript" src="./js/application.js"></script> 
+% else:
+	<script type="text/javascript" src="./js/login.js"></script> 
+% endif
+</head> 
+<body> 
+
+	<!--
+<div id="loading-mask" style=""></div>
+<div id="loading">
+    <div class="loading-indicator"><img src="./jslibs/resources/images/extanim32.gif" width="32" height="32" style="margin-right:8px;float:left;vertical-align:top;"/>ADS Browser - <br /><span id="loading-msg"></span></div>
+</div>
+	-->
+
+	<!--
+    <script type="text/javascript" src="config.js"></script> 
+	-->
+
+
+</body> 
+</html>	

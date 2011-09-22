@@ -1,0 +1,60 @@
+.domain-icon {
+	background: transparent url(icons/domain.ico) 0 0  no-repeat !important;
+}
+.ceo-icon {
+	background: transparent url(icons/user_gray.png) 0 0  no-repeat !important;
+}
+.usuario {
+	background: transparent url(icons/usuario.ico) 0 0  no-repeat !important;
+}
+.dusuario {
+	background: transparent url(icons/dusuario.ico) 0 0  no-repeat !important;
+}
+.folder-icon {
+	background: transparent url(icons/folder.gif) 0 0  no-repeat !important;
+}
+.folderou-icon {
+	background: transparent url(icons/ou.ico) 0 0  no-repeat !important;
+}
+.groups-icon {
+	background: transparent url(icons/groups.png) 0 0 no-repeat !important;
+}
+.group-icon {
+	background: transparent url(icons/gruposg.ico) 0 0 no-repeat !important;
+}
+.pc-icon {
+	background: transparent url(icons/system.png) 0 0 no-repeat !important;
+}
+.vice-icon {
+	background: transparent url(icons/user_suit.png) 0 0 no-repeat !important;
+}
+.manager-icon {
+	background: transparent url(icons/user_orange.png) 0 0 no-repeat !important;
+}
+.hc-icon {
+	background: transparent url(icons/user_female.png) 0 0 no-repeat !important;
+}
+.pm-icon {
+	background: transparent url(icons/user_red.png) 0 0 no-repeat !important;
+}
+.developer-icon {
+	background: transparent url(icons/user.png) 0 0 no-repeat !important;
+}
+.tester-icon {
+	background: transparent url(icons/user_green.png) 0 0 no-repeat !important;
+}
+.padding-img {
+	width: 18px;
+	height: 0px;
+}
+.menu-title{
+    background: #D6E3F2;
+    border-style: solid;
+    border-color:#DAE6F4 #99bbe8 #99bbe8 #DAE6F4;
+    border-width: 1px;
+    margin:-2px -2px 0;
+    color:#15428b;
+    font:bold 10px tahoma,arial,verdana,sans-serif;
+    display:block;
+    padding:3px;
+}

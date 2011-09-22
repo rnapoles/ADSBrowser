@@ -1,0 +1,21 @@
+To convert the current date and time to a UNIX timestamp do the following:
+1	var ts = Math.round((new Date()).getTime() / 1000);
+2	var ts = Math.round((new Date(79,5,24)).getTime() / 1000);
+
+new Date() // current date and time
+new Date(milliseconds) //milliseconds since 1970/01/01
+new Date(dateString)
+new Date(year, month, day, hours, minutes, seconds, milliseconds)
+
+
+var filetime_to_unixtime = function(ft) {
+    epoch_diff = 116444736000000000;
+    rate_diff = 10000000;
+    return parseInt((ft - epoch_diff)/rate_diff);
+}
+
+var filetime_as_string = function(ft) {
+    var ut = filetime_to_unixtime(ft);
+    var d = new Date(ut * 1000);
+    return d.toLocaleString();
+}

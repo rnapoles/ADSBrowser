@@ -1,0 +1,3 @@
+include adsbrowser/config/deployment.ini_tmpl
+recursive-include adsbrowser/public *
+recursive-include adsbrowser/templates *

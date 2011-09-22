@@ -1,0 +1,4 @@
+[ "possSuperiors", "systemPossSuperiors",
+                   "auxiliaryClass", "systemAuxiliaryClass", 
+                   
+http://ldapwiki.willeke.com/wiki/Microsoft%20Active%20Directory                   
