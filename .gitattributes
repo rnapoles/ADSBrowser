@@ -1,0 +1,4 @@
+#*.css linguist-detectable=false
+adsbrowser/public/jslibs/resources/css/** linguist-vendored
+
+
