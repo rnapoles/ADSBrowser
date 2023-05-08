@@ -13,7 +13,7 @@ quickly find specific objects in the AD database.
 
 ![Screenshot of ADSBrowser](ScreenShot/slideshow.gif)
 
-> This is a rewrite of the version created by Ricardo Velhote.
+> This tool aims to be a clone of dsa.msc
 
 ## Dependencies
 
@@ -41,8 +41,8 @@ dcerpc endpoint servers = +winreg +srvsvc
 ## Standalone
 
 ```bash
-git clone https://github.com/rnapoles/swat2.git
-cd swat2/
+git clone https://github.com/rnapoles/ADSBrowser.git
+cd ADSBrowser/
 ```
 
 #### Add the python binding for samba4
